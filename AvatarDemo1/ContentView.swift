@@ -12,11 +12,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: isHappy ? "face.smiling" : "face.frown")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(.yellow)
+            Text(isHappy ? "🙂" : "☹️")
+                .font(.system(size: 100))
             
             Button("Change Mood") {
                 isHappy.toggle()
