@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var isHappy = true
     @State private var hungerLevel: Int = 0
-        let hungerThreshold = 5  // this threshold makes avatar sad
-
+    let hungerThreshold = 5  // this threshold makes avatar sad
+    let maxHunger = 10 // empty bar
     
     var body: some View {
         VStack {
@@ -23,22 +23,40 @@ struct ContentView: View {
             Text(isHappy ? "🙂" : "☹️")
                 .font(.system(size: 100))
             
-            Text("Hunger: \(hungerLevel)/\(hungerThreshold)")
-                .font(.headline)
-                .padding()
+            // Hunger Bar
+            VStack(alignment: .leading) {
+                Text("Hunger Level")
+                    .font(.headline)
+
+                ZStack(alignment: .leading) {
+                    // Background Bar
+                    Rectangle()
+                        .frame(width: 200, height: 20)
+                        .opacity(0.3)
+                        .foregroundColor(.gray)
+
+                    // Filling Bar
+                    Rectangle()
+                        .frame(width: CGFloat(200 * (1 - Double(hungerLevel) / Double(maxHunger))), height: 20)
+                        .foregroundColor(hungerLevel >= hungerThreshold ? .red : .green)
+                        .animation(.easeInOut(duration: 0.3), value: hungerLevel)
+                }
+                .cornerRadius(5)
+            }
+            .padding()
             
-            Button("Feed Avatar 🍎") {
+            Button("Feed 🍎") {
                 feedAvatar()
-                }
-                    .padding()
-                    .background(Color.green)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                }
-                .onAppear {
-                    startHungerTimer()
-                }
+            }
+            .padding()
+            .background(Color.green)
+            .foregroundColor(.white)
+            .cornerRadius(10)
         }
+        .onAppear {
+            startHungerTimer()
+        }
+    }
 
 // Function to Start Hunger Timer
     func startHungerTimer() {
@@ -48,6 +66,10 @@ struct ContentView: View {
             }
             if hungerLevel >= hungerThreshold {
                 isHappy = false
+                hungerLevel += 1
+                if hungerLevel >= maxHunger {
+                    timer.invalidate()
+                }
             }
         }
     }
