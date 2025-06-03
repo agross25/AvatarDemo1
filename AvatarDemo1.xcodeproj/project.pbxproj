@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AED815692DEF43E10080EA67 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AED815682DEF43DB0080EA67 /* README.md */; };
+		AED8156C2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.34 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = AED8156A2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.34 PM.png */; };
+		AED8156D2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.48 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = AED8156B2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.48 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		AE7B51972D80499800432DC3 /* AvatarDemo1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarDemo1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7B51A12D80499800432DC3 /* AvatarDemo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvatarDemo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED815682DEF43DB0080EA67 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AED8156A2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.34 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2025-06-03 at 6.34.34 PM.png"; sourceTree = "<group>"; };
+		AED8156B2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.48 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2025-06-03 at 6.34.48 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,6 +84,8 @@
 		AE7B517D2D80499600432DC3 = {
 			isa = PBXGroup;
 			children = (
+				AED8156A2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.34 PM.png */,
+				AED8156B2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.48 PM.png */,
 				AED815682DEF43DB0080EA67 /* README.md */,
 				AE7B51882D80499600432DC3 /* AvatarDemo1 */,
 				AE7B519A2D80499800432DC3 /* AvatarDemo1Tests */,
@@ -219,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AED815692DEF43E10080EA67 /* README.md in Resources */,
+				AED8156C2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.34 PM.png in Resources */,
+				AED8156D2DEF4E790080EA67 /* Screenshot 2025-06-03 at 6.34.48 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
