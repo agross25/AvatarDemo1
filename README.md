@@ -40,7 +40,7 @@ View
 
 # Screenshots
 /Users/adinagross/XcodeProjects/AvatarDemo1/Screenshots/HappyAvatar.png
+/Users/adinagross/XcodeProjects/AvatarDemo1/Screenshots/SadAvatar.png
 
 ## Author
 Adina Gross
-/Users/adinagross/XcodeProjects/AvatarDemo1/Screenshots/HappyAvatar.png
