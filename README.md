@@ -39,8 +39,8 @@ View
 - resets isHappy to true
 
 # Screenshots
-/Users/adinagross/XcodeProjects/AvatarDemo1/Screenshots/HappyAvatar.png
-/Users/adinagross/XcodeProjects/AvatarDemo1/Screenshots/SadAvatar.png
+![Happy Avatar](Screenshots/HappyAvatar.png)
+![Sad Avatar](Screenshots/SadAvatar.png)
 
 ## Author
 Adina Gross
